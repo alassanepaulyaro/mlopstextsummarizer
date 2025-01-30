@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from src.textSummarizer.logging import logger
+from src.mlopstextsummarizer.logging import logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
@@ -30,9 +30,8 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise ValueError("yaml file is empty")
     except Exception as e:
         raise e
-    
 
-    @ensure_annotations
+@ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
 

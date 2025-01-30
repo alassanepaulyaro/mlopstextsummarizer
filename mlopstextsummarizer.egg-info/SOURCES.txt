@@ -1,0 +1,7 @@
+README.md
+setup.py
+mlopstextsummarizer.egg-info/PKG-INFO
+mlopstextsummarizer.egg-info/SOURCES.txt
+mlopstextsummarizer.egg-info/dependency_links.txt
+mlopstextsummarizer.egg-info/requires.txt
+mlopstextsummarizer.egg-info/top_level.txt
