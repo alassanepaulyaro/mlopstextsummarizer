@@ -1,3 +1,3 @@
 from src.mlopstextsummarizer.logging import logger
 
-logger.info("*******************")
+logger.info("*******************")git add
