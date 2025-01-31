@@ -1,8 +1,6 @@
-# mlopstextsummarizer
+# TextSummarizer USing Huggingface
 
-## TextSummarizer USing Huggingface
-
-### Workflows 
+## Workflows 
 
 1. Config.yaml
 2. Params.yaml
