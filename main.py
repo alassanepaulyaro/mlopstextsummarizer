@@ -2,6 +2,8 @@ from src.mlopstextsummarizer.logging import logger
 from src.mlopstextsummarizer.pipeline.stage_1_data_ingestion_pipeline import DataIngestionTrainingPipeline
 from src.mlopstextsummarizer.pipeline.stage_2_data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.mlopstextsummarizer.pipeline.stage_3_model_trainer_pipeline import ModelTrainerTrainingPipeline
+from src.mlopstextsummarizer.pipeline.stage_4_model_evaluation import ModelEvaluationTrainingPipeline
+
 
 STAGE_NAME="Data Ingestion stage"
 
@@ -35,3 +37,15 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+STAGE_NAME = "Model Evaluation stage"
+
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_evaluation = ModelEvaluationTrainingPipeline()
+   model_evaluation.initiate_model_evaluation()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
