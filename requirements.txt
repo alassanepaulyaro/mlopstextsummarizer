@@ -17,3 +17,5 @@ python-box
 ensure
 Jinja2
 evaluate
+fastapi 
+uvicorn
